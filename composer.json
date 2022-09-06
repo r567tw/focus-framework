@@ -1,0 +1,11 @@
+{
+    "name": "r567tw/focus-framework",
+    "require": {
+        "r567tw/focus": "^0.0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    }
+}
