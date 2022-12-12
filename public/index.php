@@ -7,18 +7,6 @@ use app\controllers\AuthController;
 use r567tw\focus\core\Application;
 use app\models\User;
 
-// $dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__));
-// $dotenv->load();
-
-// $config = [
-//     'userClass' => User::class,
-//     'db' => [
-//         'dsn' => $_ENV['DB_DSN'],
-//         'user' => $_ENV['DB_USER'],
-//         'password' => $_ENV['DB_PASSWORD']
-//     ]
-// ];
-
 $app = new Application(dirname(__DIR__));
 
 $app->on(Application::EVENT_BEFORE_REQUEST,function(){
@@ -33,15 +21,12 @@ $app->on(Application::EVENT_AFTER_REQUEST,function(){
 
 $app->router->get('/',[MainController::class,'home']);
 $app->router->get('/contact', [MainController::class, 'contact']);
+$app->router->get('/redirect', [MainController::class, 'res']);
 
 $app->router->get('/hello', 'helloworld');
 
-$app->router->get('/jk',function(){
+$app->router->get('/json',function(){
     return json_encode(['xxxx'=>'yyy']);
 });
-
-$app->router->get('/profile', [AuthController::class, 'profile']);
-$app->router->get('/noprofile', [AuthController::class, 'profilenoAuth']);
-
 
 $app->run();
