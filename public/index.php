@@ -20,8 +20,9 @@ $app->on(Application::EVENT_AFTER_REQUEST,function(){
 });
 
 $app->router->get('/',[MainController::class,'home']);
+$app->router->get('/test',[MainController::class,'test']);
 $app->router->get('/contact', [MainController::class, 'contact']);
-$app->router->get('/redirect', [MainController::class, 'res']);
+$app->router->get('/redirect', [MainController::class, 'red']);
 
 $app->router->get('/hello', 'helloworld');
 

@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ac08a4fcd02d53c0e07ab7d64fb251fd",
+    "content-hash": "2c375b7c86bda5a9ac132fba71829b63",
     "packages": [
         {
             "name": "r567tw/focus",
-            "version": "v0.0.1",
+            "version": "v0.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/r567tw/focus.git",
-                "reference": "ea7ab0baa86d5c0bbac1e2e1ae14aaa44d9e0daf"
+                "reference": "5ffd8e23dd7cd99ec531697eefde4e9eb8c62d39"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/r567tw/focus/zipball/ea7ab0baa86d5c0bbac1e2e1ae14aaa44d9e0daf",
-                "reference": "ea7ab0baa86d5c0bbac1e2e1ae14aaa44d9e0daf",
+                "url": "https://api.github.com/repos/r567tw/focus/zipball/5ffd8e23dd7cd99ec531697eefde4e9eb8c62d39",
+                "reference": "5ffd8e23dd7cd99ec531697eefde4e9eb8c62d39",
                 "shasum": ""
             },
             "require": {
@@ -28,23 +28,29 @@
             },
             "type": "library",
             "autoload": {
+                "files": [
+                    "src/helpers/helper.php"
+                ],
                 "psr-4": {
                     "r567tw\\focus\\": "./src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "r567tw",
                     "email": "r567tw@gmail.com"
                 }
             ],
-            "description": "php framework api only",
+            "description": "the smallest php framework api only / for custom",
             "support": {
                 "issues": "https://github.com/r567tw/focus/issues",
-                "source": "https://github.com/r567tw/focus/tree/v0.0.1"
+                "source": "https://github.com/r567tw/focus/tree/v0.0.4"
             },
-            "time": "2022-08-18T17:52:34+00:00"
+            "time": "2023-01-03T10:22:44+00:00"
         }
     ],
     "packages-dev": [],

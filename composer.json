@@ -1,7 +1,7 @@
 {
     "name": "r567tw/focus-framework",
     "require": {
-        "r567tw/focus": "^0.0.1"
+        "r567tw/focus": "^0.0.4"
     },
     "autoload": {
         "psr-4": {

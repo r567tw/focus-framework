@@ -16,16 +16,16 @@ class MainController extends Controller
 
     public function contact()
     {
-        return $this->jsonFromFile(dirname(__DIR__)."/jsons/sample.json");
+        return response()->file(dirname(__DIR__)."/jsons/sample.json");
     }
 
     public function home(Request $req)
     {
-        return (new Response())->json($req->body());
+        return response()->json($req->body());
     }
 
-    public function res()
+    public function red()
     {
-        return (new Response())->redirect('/');
+        return response()->redirect('https://tw.yahoo.com');
     }
 }
