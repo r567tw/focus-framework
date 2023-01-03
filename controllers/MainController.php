@@ -21,10 +21,10 @@ class MainController extends Controller
 
     public function home(Request $req)
     {
-        return response()->json($req->body());
+        return response()->json(["hello"=> "world"]);
     }
 
-    public function red()
+    public function redirect()
     {
         return response()->redirect('https://tw.yahoo.com');
     }
